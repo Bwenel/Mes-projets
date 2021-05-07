@@ -1,1 +1,0 @@
-Vous retrouverez ici le projet en Golang que j'ai du effectuer pour mon examen d'ecole
