@@ -2,9 +2,6 @@ Ce script bash pour Ejabberd avec une utilisation en local a été fait lors de 
 
 1 - L'installation de Ejabberd avec :
 
-- Une verification de la présence de Ejabberd afin de savoir s’il n'est pas déjà installé
-- Configuration d'ejabberd avec création d'un certificat en .pem
-
 2 - La désinstallation de Ejabberd
 
 3 - La création d'utilisateurs à partir du fichier /etc/passwd
