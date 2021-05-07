@@ -11,9 +11,11 @@ a) Consommateur
 
 Créer un déploiement nommé web (avec 3 replicas) basé sur l'image httpd
 Monter le volume créé précédemment sur le chemin htdocs du serveur Apache
+
 b) Service NodePort
 
 Créer un service nommé web de type NodePort qui rassemble les pods du déploiement web
+
 c) Utilisation
 
 Depuis le poste de travail, exécuter toutes les minutes la commande "curl node1:30000"
