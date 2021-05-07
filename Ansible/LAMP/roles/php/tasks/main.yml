@@ -1,0 +1,7 @@
+- name: Installation php sur Ubuntu
+  remote_user: root
+  apt:
+    name: php
+    state: present
+    update_cache: yes
+  when: ansible_facts['os_family'] == "Debian"

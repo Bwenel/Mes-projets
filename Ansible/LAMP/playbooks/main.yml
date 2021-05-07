@@ -1,0 +1,9 @@
+- name: Playbook
+  hosts: webserver
+  become: true
+  remote_user: root
+  vars_files:
+     - "../vars/secret.yml"
+  roles:
+     - { role : apache }
+     - { role : php }

@@ -1,0 +1,5 @@
+- name: restart_apache
+  become_user: apache
+  service:
+    name: apache2
+    state: restarted

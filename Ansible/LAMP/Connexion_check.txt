@@ -1,0 +1,4 @@
+Ajout de la clef ssh pour le compte root sur les 2 containers
+
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.17.0.7
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.17.0.8

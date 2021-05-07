@@ -1,0 +1,15 @@
+EXAMEN LAMP NON FINI
+
+PENSEZ A MODIFIER LE FICHIER /ETC/HOSTS AVEC
+IPCONTAINER:host_web
+IPCONTAINER:host_db
+
+faire docker ps puis docker inspect id_ducontainer pour avoir l'ip des containers
+
+NE PAS OUBLIER DE METTRE LA CLEF SSH
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.17.0.3
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.17.0.2
+
+Pour verifier la bonne installation d'apache :
+se connecter sur le container host_web et effectuer la commande : apache2 -version
+

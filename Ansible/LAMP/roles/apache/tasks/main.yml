@@ -1,0 +1,25 @@
+---
+- name: Installation Apache2 sur Ubuntu
+  remote_user: root
+  apt: # source version apache https://launchpad.net/ubuntu/+source/apache2/2.4.29-1ubuntu4.14
+    name: apache2=2.4.29-1ubuntu4.14
+    state: present
+    update_cache: yes
+  when: ansible_facts['os_family'] == "Debian" 
+
+- name: Demarrage du service apache2
+  remote_user: root
+  service:
+    name: apache2
+    state: started
+    enabled: true
+  when: ansible_facts['os_family'] == "Debian" 
+
+- name: Copie du fichier apache.conf.2
+  become: yes
+  template:
+    src: "../templates/apache.conf.j2"
+    dest: /etc/apache2/apache.conf.j2
+  when: ansible_facts['os_family'] == "Debian"
+  notify:
+      - restart_apache

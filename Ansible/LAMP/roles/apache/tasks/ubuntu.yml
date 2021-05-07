@@ -1,0 +1,6 @@
+- name: Installation Apache2 sur Ubuntu
+  remote_user: root
+  apt:
+    name: apache2=2.4.29
+    state: present
+    update_cache: yes
