@@ -1,8 +1,8 @@
 # Projet SAMO
 
-Pour ce projet nous etions une équipes de 4 personne dont l'objectif nous devions faire la refonte de l'infrastructure informatique d'un client fictif.
+Pour ce projet nous étions une équipes de 4 personne dont l'objectif était de faire la refonte de l'infrastructure informatique d'un client fictif.
 
-J'ai été chargé de la partie Active Directory, pour me faciliter la tâche dans mon travail j'ai donc crée quelques scripts d'automatisation pour l'infrastructure de SAMO.
+J'ai été chargé de la partie Active Directory, pour me faciliter la tâche dans mon travail j'ai donc créeé quelques scripts d'automatisation pour l'infrastructure de SAMO.
 
 
 # Active Directory
